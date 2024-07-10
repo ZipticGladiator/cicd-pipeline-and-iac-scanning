@@ -1,0 +1,4 @@
+project1 
+
+access key: AKIAVRUVWEEUXXIAG5WB
+secret: 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
