@@ -2,11 +2,11 @@ provider "aws" {
   region = "eu-north-1" #Stockholm region
 }
 
-resource "aws s3 bucket" "terraformtoday" {
+resource "aws_s3_bucket" "terraformtoday" {
   bucket = "siyatfs3bucket1"
 }
 
-resource "aws s3 bucket" "terraformtomorrow" {
+resource "aws_s3_bucket" "terraformtomorrow" {
   bucket = "siyatfs3bucket2"
 }
 
@@ -17,8 +17,8 @@ terraform {
   }
 }
 
-resource "aws instance" "CHANGE" {
-  ami  = "ami-052387465d846f3fc"
-  type = "t3.micro"
+resource "aws_instance" "CHANGE" {
+  ami           = "ami-052387465d846f3fc"
+  instance_type = "t3.micro"
 }
 
