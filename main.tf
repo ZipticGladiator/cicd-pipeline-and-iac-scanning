@@ -17,7 +17,7 @@ terraform {
   }
 }
 
-resource "aws_instance" "CHANGE" {
+resource "aws_instance" "myinstance" {
   ami           = "ami-052387465d846f3fc"
   instance_type = "t3.micro"
 }
